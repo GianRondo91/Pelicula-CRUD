@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/GianRondo91/Pelicula-CRUD/issues"
   },
-  "homepage": "https://github.com/GianRondo91/Pelicula-CRUD#readme"
+  "homepage": "https://github.com/GianRondo91/Pelicula-CRUD#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.17"
+  }
 }
