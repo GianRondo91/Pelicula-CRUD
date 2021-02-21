@@ -1,40 +1,37 @@
-class UserStorage {
 
-    state = [];
+// Pongo las llaves para quedarme solo con user
+const { User } = require('./storage');
+
+class UserStorage {
 
     constructor() {
         console.log('se ha creado una instancia de Store');
-        this.state = [];
     }
 
-    async findById(id){  // PROMISE OF INSTACE
-        const instance = this.state[id-1];
-        if(!instance) {
-            return null;
-        } 
-        return instance
+    async findById(id){
+        const user = await User.findById(id)
+            .exec();
+        return user;
     }
 
-    async updateById(id, object){
-        await this.findById(id);
-        this.state[id-1] = object;
-        return object;
+    async update(userModel){        
+        let user = new User(userModel);
+        user._id = userModel.id;
+        await user.save();
     }
 
     async deleteById(id){
-        return this.updateById(id,null);
+        return await User.deleteById(id);
     }
 
-    async set(object) {
-        this.state.push(object)
-        return this.state.length;
+    async create(userModel) {
+        let user = new User(userModel);        
+        user = await user.save();
+        userModel.id = user._id;
     }
 
     async get(){
-        return this.state
-        .map((element, index) => element ? {...element, id:index+1} : null)
-        .filter((element) => element !== null)
-        .slice(-10);
+        return await User.find();
     }
 
 }

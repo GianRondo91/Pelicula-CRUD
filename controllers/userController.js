@@ -1,4 +1,4 @@
-const Storage = require('../storage');
+const Storage = require('../storage/userStorage');
 
 class UsersController {
     
@@ -9,7 +9,8 @@ class UsersController {
     }
 
     async create(user){
-        return await this.storage.set(user);
+        await this.storage.create(user);
+        return user.id;
     }
 
     async get(id){

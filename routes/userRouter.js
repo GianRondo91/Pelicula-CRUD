@@ -7,7 +7,7 @@ const UserModel = require('../models/userModel');
 router.post('/', async (req, res) => {
     try {
         const id = await userController.create(new UserModel(req.body));
-        res.json({id});
+        res.json(id);
     } catch (error) {
         return res.status(500).json({
             message: 'Server Error:' + error
@@ -18,8 +18,7 @@ router.post('/', async (req, res) => {
 //Endpoind para Obtener usuario por ID
 router.get('/:id', async (req, res) => {
     try {
-        const id = parseInt(req.params.id);
-        const user = await userController.get(id);        
+        const user = await userController.get(req.params.id);        
         if(!user){
             res.sendStatus(404);
         } else {
