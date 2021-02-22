@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const filmController = require('../controllers/filmController');
-const orderController = require('../controllers/orderController');
 const FilmModel = require('../models/filmModel');
 
 router.post('/', async(req, res) => {
@@ -28,3 +27,5 @@ router.get('/:id', async (req, res)=> {
         });
     };
 });
+
+module.exports = router;

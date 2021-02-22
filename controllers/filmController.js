@@ -19,11 +19,11 @@ class FilmController {
         return await this.filmStorage.findById(id);
     }
 
-    async get(id){
+    async delete(id){
         return await this.filmStorage.deleteById(id);
     }
 
-    async get(id){
+    async update(id){
         return await this.filmStorage.update(id);
     }
 }

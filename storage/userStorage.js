@@ -33,7 +33,6 @@ class UserStorage {
     async get(){
         return await User.find();
     }
-
 }
 
 module.exports = UserStorage;

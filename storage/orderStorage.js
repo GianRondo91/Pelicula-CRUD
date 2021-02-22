@@ -14,7 +14,7 @@ class OrderStorage {
 
     async update(orderModel){
         let order = new Order(orderModel);
-        order._id = orderModel._id;
+        order._id = orderModel.id;
         await order.save();
     };
 

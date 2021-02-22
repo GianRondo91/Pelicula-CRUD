@@ -17,11 +17,11 @@ class UsersController {
         return await this.storage.findById(id);
     }
 
-    async get(id){
+    async delete(id){
         return await this.storage.deleteById(id);
     }
 
-    async get(id){
+    async update(id){
         return await this.storage.update(id);
     }
 }

@@ -10,18 +10,18 @@ class OrderController {
 
     async create(order) {
         await this.orderStorage.create(order);
-        return order.id_Order;
+        return order.idOrder;
     }
 
     async get(id){
         return await this.orderStorage.findById(id);
     }
 
-    async get(id){
+    async delete(id){
         return await this.orderStorage.deleteById(id);
     }
 
-    async get(id){
+    async update(id){
         return await this.orderStorage.update(id);
     }
 }

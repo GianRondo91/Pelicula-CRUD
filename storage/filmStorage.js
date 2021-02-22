@@ -14,7 +14,7 @@ class FilmStorage { 
 
     async update(orderModel) {
         let film = new Film(orderModel);
-        film._id = filmModel._id;
+        film._id = filmModel.id;
         await film.save();
     };
 

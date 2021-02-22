@@ -1,10 +1,10 @@
 class FilmModel {
-    id_movie;
+    id;
     title;
     genres;
 
     constructor(movie){
-        this.id_movie = movie.id_movie;
+        this.id = movie.id;
         this.title = movie.title;
         this.genres = movie.genres;
     }
