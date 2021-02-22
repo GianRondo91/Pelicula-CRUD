@@ -5,7 +5,7 @@ const { User } = require('./storage');
 class UserStorage {
 
     constructor() {
-        console.log('se ha creado una instancia de Store');
+        console.log('se ha creado una instancia de UserStore');
     }
 
     async findById(id){

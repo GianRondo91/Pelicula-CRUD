@@ -3,7 +3,7 @@ const router = require('express').Router();
 const userController = require('../controllers/userController');
 const UserModel = require('../models/userModel');
 
-//Endpoind para crear usuario
+//Endpoint para crear usuario
 router.post('/', async (req, res) => {
     try {
         const id = await userController.create(new UserModel(req.body));
@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-//Endpoind para Obtener usuario por ID
+//Endpoint para Obtener usuario por ID
 router.get('/:id', async (req, res) => {
     try {
         const user = await userController.get(req.params.id);        

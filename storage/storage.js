@@ -7,7 +7,7 @@ logger('Libreria mongoose requerida');
 
 const MONGO_HOST = process.env.MONGO_HOST || 'localhost';
 const MONGO_PORT = process.env.MONGO_PORT || '27017';
-const MONGO_DBNAME = process.env.MONGO_DBNAME || 'practicas';
+const MONGO_DBNAME = process.env.MONGO_DBNAME || 'movies';
 const MONGO_USER = process.env.MONGO_USER || null;
 const MONGO_PWD = process.env.MONGO_PWD || null;
 
@@ -18,6 +18,7 @@ mongoose.connect(QUERY_STRING, { userNewUrlParser: true, useUnifiedTopology: tru
     logger('conexión establecida');
 });
 
+/************* SCHEMAS ************/
 let userSchema = mongoose.Schema({
     name: {
         type: String,
@@ -39,8 +40,57 @@ let userSchema = mongoose.Schema({
     }
 });
 
-const User = mongoose.model('User', userSchema);
+let orderSchema = mongoose.Schema({
+    id_Order:{
+        type: String,
+        required: true
+    },
+    id_Movie:{
+        type: String,
+        required: true
+    },
+    id_User:{
+        type: String,
+        required: true
+    },
+    name_User:{
+        type: String
+    },
+    reserve_Date:{
+        type: Date
+    },
+    return_Date:{
+        type: Date
+    }
+});
 
+let filmSchema = mongoose.Schema({
+    id_movie:{
+        type: String,
+        required: true 
+    },
+    title: {
+        type: String
+    },
+    genres: {
+        type: String
+    }
+});
+
+/*************  ************/
+const User = mongoose.model('User', userSchema);
+const Order = mongoose.model('Order', orderSchema);
+const Film = mongoose.model('Film', filmSchema);
+
+/*************  ************/
 module.exports = {
     User
+};
+
+module.exports = {
+    Order
+};
+
+module.exports = {
+    Film
 };

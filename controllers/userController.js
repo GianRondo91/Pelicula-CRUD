@@ -15,7 +15,15 @@ class UsersController {
 
     async get(id){
         return await this.storage.findById(id);
-    }    
+    }
+
+    async get(id){
+        return await this.storage.deleteById(id);
+    }
+
+    async get(id){
+        return await this.storage.update(id);
+    }
 }
 
 let userController = new UsersController();
