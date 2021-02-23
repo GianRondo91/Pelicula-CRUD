@@ -75,6 +75,10 @@ Luego lanzar app.js
 ```bash
     node app.js
 ```
+ó
+```bash
+    npm start
+```
 
 
 
