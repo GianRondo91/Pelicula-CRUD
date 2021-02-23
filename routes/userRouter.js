@@ -31,5 +31,33 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+//Endpoint para actualizar un Usuario
+router.put('/:id', async(req, res) => {
+    try{
+        const id = req.params.id;
+        res.json(await userController.update(id, req.body));
+    }catch(error){
+        return res.status(500).json({
+            message: 'Server error: ' + error
+        });
+    }
+});
+
+//Endpoint para eliminar un Usuario
+router.delete('/:id', async(req, res) => {
+    try {
+        const id = req.params.id;
+        const status = 'deleted'
+        await userController.destroy(id);
+        res.json({ status, id });
+    } catch (error) {
+        return res.status(500).json({
+            message: 'Server Error'
+        });
+    }
+
+});
+
+
 //Exporto
 module.exports = router;
