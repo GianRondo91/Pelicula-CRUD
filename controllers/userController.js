@@ -10,7 +10,7 @@ class UsersController {
 
     async create(user){
         await this.storage.create(user);
-        return user.id;
+        return user._id;
     }
 
     async get(id){

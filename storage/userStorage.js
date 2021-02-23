@@ -1,6 +1,6 @@
 
 // Pongo las llaves para quedarme solo con user
-const { User } = require('./storage');
+const { User } = require('../models/userModel');
 const bcrypt = require('bcryptjs');
 
 
@@ -18,7 +18,6 @@ class UserStorage {
 
     async update(userModel){        
         let user = new User(userModel);
-        user._id = userModel.id;
         await user.save();
     }
 
@@ -32,10 +31,10 @@ class UserStorage {
     //     userModel.id = user._id;
     // }
 
-    async create(userModel) {
+    async create(user) {
         const encrytedPassword = await bcrypt.hash(user.password, 6);
         user.password = encrytedPassword;
-        return User.create(user);
+        user = await user.save();
     }
 
     async get(){

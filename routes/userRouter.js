@@ -20,7 +20,7 @@ router.get('/:id', async (req, res) => {
     try {
         const user = await userController.get(req.params.id);        
         if(!user){
-            res.sendStatus(404);
+            res.status(404);
         } else {
             res.json(user);
         }

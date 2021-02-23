@@ -1,4 +1,4 @@
-const { Film } = require('./storage');
+const { Film } = require('../models/filmModel');
 
 class FilmStorage { 
 
@@ -14,7 +14,6 @@ class FilmStorage { 
 
     async update(orderModel) {
         let film = new Film(orderModel);
-        film._id = filmModel.id;
         await film.save();
     };
 
@@ -25,7 +24,6 @@ class FilmStorage { 
     async create(orderModel) {
         let film = new Film(filmModel);
         film = await film.save();
-        filmModel.id = film._id;
     };
 
     async get() {

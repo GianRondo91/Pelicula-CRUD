@@ -1,4 +1,4 @@
-const { Order } = require('./storage');
+const { Order } = require('../models/orderModel');
 
 class OrderStorage {
     
@@ -14,7 +14,6 @@ class OrderStorage {
 
     async update(orderModel){
         let order = new Order(orderModel);
-        order._id = orderModel.id;
         await order.save();
     };
 
@@ -25,7 +24,6 @@ class OrderStorage {
     async create(orderModel){
         let order = new Order(orderModel);
         order = await order.save();
-        orderModel.id = order._id;
     };
 
     async get(){

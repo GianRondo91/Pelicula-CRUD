@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const ObjectId = mongoose.Types.ObjectId;
 
 const orderSchema = {
-    id: String,
+    _id: ObjectId,
     idFilm:{
         type: ObjectId,
         required: true

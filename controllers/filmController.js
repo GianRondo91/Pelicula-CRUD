@@ -12,7 +12,7 @@ class FilmController {
 
     async create(film) {
         await this.filmStorage.create(film);
-        return film.id_Film;
+        return film._id;
     }
 
     async get(id){

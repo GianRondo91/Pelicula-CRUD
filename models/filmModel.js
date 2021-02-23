@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+const ObjectId = mongoose.Types.ObjectId;
 
 const filmSchema = {
-    id: String,
+    _id: ObjectId,
     title: String,
     genres: String
 }

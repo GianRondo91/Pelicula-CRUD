@@ -10,7 +10,7 @@ class OrderController {
 
     async create(order) {
         await this.orderStorage.create(order);
-        return order.idOrder;
+        return order._id;
     }
 
     async get(id){
