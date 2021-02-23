@@ -1,20 +1,22 @@
-class OrderModel {
-    id;
-    idFilm;
-    idUser;
-    nameUser;
-    reserveDate;
-    returnDate;
+const mongoose = require('mongoose');
+const ObjectId = mongoose.Types.ObjectId;
 
-    constructor(order){
-        this.id = order.id;
-        this.idFilm = order.idFilm;
-        this.idUser = order.idUser;
-        this.nameUser = order.nameUser;
-        this.reserveDate = reserveDate;
-        this.returnDate = returnDate;
-    }
+const orderSchema = {
+    id: String,
+    idFilm:{
+        type: ObjectId,
+        required: true
+    },
+    idUser:{
+        type: ObjectId,
+        required: true
+    },
+    nameUser: String,
+    reserveDate: Date,
+    returnDate: Date,
 } 
+
+const OrderModel = mongoose.model('Order', orderSchema);
 
 module.exports = OrderModel;
 

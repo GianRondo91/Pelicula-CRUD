@@ -1,20 +1,14 @@
+const mongoose = require('mongoose');
 
-class UserModel {
-    id;
-    name;
-    lastname;
-    email;
-    phone;
-    password;
-
-    constructor(user) {
-        this.id = user.id;
-        this.name = user.name;
-        this.lastname = user.lastname;
-        this.email = user.email;
-        this.phone = user.phone;
-        this.password = user.password;
-    }
+const userSchema = {
+    id: String,
+    name: String,
+    lastname: String,
+    email: String,
+    phone: String,
+    password: String
 }
+
+const UserModel = mongoose.model('User', userSchema);
 
 module.exports = UserModel;
