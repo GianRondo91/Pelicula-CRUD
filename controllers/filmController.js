@@ -8,8 +8,6 @@ class FilmController {
         this.filmStorage = new Storage();
     }
 
-    
-
     async create(film) {
         await this.filmStorage.create(film);
         return film._id;
@@ -23,8 +21,8 @@ class FilmController {
         return await this.filmStorage.deleteById(id);
     }
 
-    async update(id){
-        return await this.filmStorage.update(id);
+    async update(id, film){
+        return await this.filmStorage.update(id, film);
     }
 }
 

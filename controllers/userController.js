@@ -21,8 +21,8 @@ class UsersController {
         return await this.storage.deleteById(id);
     }
 
-    async update(id){
-        return await this.storage.update(id);
+    async update(id, user){
+        return await this.storage.update(id, user);
     }
 }
 

@@ -42,12 +42,11 @@ router.put('/:id', async(req, res) => {
 router.delete('/:id', async(req, res) => {
     try {
         const id = req.params.id;
-        const status = 'deleted'
-        await filmController.destroy(id);
-        res.json({ status, id });
+        await filmController.delete(id);
+        res.sendStatus(200);
     } catch (error) {
         return res.status(500).json({
-            message: 'Server Error'
+            message: 'Server Error: ' + error
         });
     }
 

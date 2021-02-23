@@ -21,8 +21,8 @@ class OrderController {
         return await this.orderStorage.deleteById(id);
     }
 
-    async update(id){
-        return await this.orderStorage.update(id);
+    async update(id, order){
+        return await this.orderStorage.update(id, order);
     }
 }
 

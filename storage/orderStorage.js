@@ -1,32 +1,30 @@
-const { Order } = require('../models/orderModel');
+const Order = require('../models/orderModel');
 
 class OrderStorage {
-    
-    constructor(){
+
+    constructor() {
         console.log('Se ha creado una instancia de OrderStorage');
     }
 
-    async findById(id){
+    async findById(id) {
         const order = await Order.findById(id)
             .exec();
         return order;
     };
 
-    async update(orderModel){
-        let order = new Order(orderModel);
+    async update(id, order) {
+        await Order.findOneAndUpdate(id, order);
+    };
+
+    async deleteById(id) {
+        return await Order.findByIdAndRemove(id);
+    };
+
+    async create(order) {
         await order.save();
     };
 
-    async deleteById(id){
-        return await Order.deleteById(id);
-    };
-
-    async create(orderModel){
-        let order = new Order(orderModel);
-        order = await order.save();
-    };
-
-    async get(){
+    async get() {
         return await Order.find();
     };
 };

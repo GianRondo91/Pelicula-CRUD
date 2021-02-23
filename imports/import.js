@@ -1,4 +1,8 @@
-const { User, Order, Film } = require('../storage/storage');
+const Db =  require('../storage/db');
+const User =  require('../models/userModel');
+const Order =  require('../models/orderModel');
+const Film =  require('../models/filmModel');
+
 
 const usersCollection = require('./db/users.json');
 const ordersCollection = require('./db/orders.json');
