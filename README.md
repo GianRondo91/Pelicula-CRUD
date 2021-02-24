@@ -63,7 +63,7 @@ Iniciar un proyecto con nodejs
 
 Para lanzar la importación de la **Base de Datos**
 ```bash
-npm run import
+    npm run import
 ```
 
 Libreria para ayudarte a codificar contraseñas
