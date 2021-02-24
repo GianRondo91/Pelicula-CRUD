@@ -80,6 +80,3 @@ Luego lanzar app.js
     npm start
 ```
 
-
-
-
