@@ -4,6 +4,7 @@ The Film Project
 
 ## Tabla de contenido
 - [**Introducción**](#item1).
+- -[**Herramientas**](#item2).
 - [**Funcionalidades**](#item2).
 - [**Ejecución**](#item3).
 
@@ -11,10 +12,10 @@ The Film Project
 
 Mi primer proyecto creando mi propia API de peliculas siguiendo los pasos **CRUD**, en el cual cuento con los datos de mis peliculas cargadas, usuarios y pedidos que realizo el usuario.
 
-## Herramientas 🚀
+## <a name="item2"></a>Herramientas 🚀
 <img src="img/js.png" width="40"><img src="img/postman.png" width="42"><img src="img/mongodb.png" width="40"><img src="img/docker.png" width="40"><img src="img/nodejs.png" width="50">
 
-## <a name="item2"></a>Funcionalidades
+## <a name="item3"></a>Funcionalidades
 
 Para poder probarlo, necesitas usar postman.
 
@@ -47,7 +48,7 @@ Para poder probarlo, necesitas usar postman.
 ```
 <img src="img/Delete-Film.png" width="60%">
 
-## <a name="item3"></a>Ejecución 🛠️
+## <a name="item4"></a>Ejecución 🛠️
 
 Para istalar las librerias que utilizo en el proyecto, solo tiene que lanzar:
 ```bash
