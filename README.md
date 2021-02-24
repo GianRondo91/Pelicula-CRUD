@@ -3,15 +3,18 @@ The Film Project
 ![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg) ![build](https://img.shields.io/appveyor/ci/:user/:repo.svg) ![chat](https://img.shields.io/discord/:serverId.svg)
 
 ## Tabla de contenido
-[TOC]
+- [**Introducción**](#item1).
+- [**Funcionalidades**](#item2).
+- [**Ejecución**](#item3).
 
-## Introducción
+## <a name="item1"></a>Introducción
+
 Mi primer proyecto creando mi propia API de peliculas siguiendo los pasos **CRUD**, en el cual cuento con los datos de mis peliculas cargadas, usuarios y pedidos que realizo el usuario.
 
 ## Herramientas 🚀
 <img src="img/js.png" width="40"><img src="img/postman.png" width="42"><img src="img/mongodb.png" width="40"><img src="img/docker.png" width="40"><img src="img/nodejs.png" width="50">
 
-## Funcionalidades
+## <a name="item2"></a>Funcionalidades
 
 Para poder probarlo, necesitas usar postman.
 
@@ -44,7 +47,7 @@ Para poder probarlo, necesitas usar postman.
 ```
 <img src="img/Delete-Film.png" width="60%">
 
-## Ejecución 🛠️
+## <a name="item3"></a>Ejecución 🛠️
 
 Para istalar las librerias que utilizo en el proyecto, solo tiene que lanzar:
 ```bash
@@ -75,3 +78,4 @@ Luego lanzar app.js
     npm start
 ```
 
+###### tags: `Templates` `Documentation`
