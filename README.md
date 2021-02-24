@@ -61,6 +61,11 @@ Iniciar un proyecto con nodejs
     npm init
 ```
 
+Para lanzar la importación de la **Base de Datos**
+```bash
+npm run import
+```
+
 Libreria para ayudarte a codificar contraseñas
 ```bash
     npm i bcryptjs
