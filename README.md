@@ -3,10 +3,10 @@ The Film Project
 ![downloads](https://img.shields.io/github/downloads/atom/atom/total.svg) ![build](https://img.shields.io/appveyor/ci/:user/:repo.svg) ![chat](https://img.shields.io/discord/:serverId.svg)
 
 ## Tabla de contenido
-- [**Introducción**](#item1).
-- -[**Herramientas**](#item2).
-- [**Funcionalidades**](#item2).
-- [**Ejecución**](#item3).
+- [**Introducción**](#item1)
+- [**Herramientas**](#item2)
+- [**Funcionalidades**](#item2)
+- [**Ejecución**](#item3)
 
 ## <a name="item1"></a>Introducción
 
