@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const ObjectId = mongoose.Types.ObjectId;
+const Schema = mongoose.Schema;
 
-const userSchema = {
+const userSchema = new Schema({
     name: String,
     lastname: String,
     email: {
@@ -11,15 +11,14 @@ const userSchema = {
     },
     phone: String,
     password: String
-}
+});
 
 const toJSONConfig = {
-    transform: (doc,ret,opt) => {
-           delete ret['password']
-           return ret
+    transform: (doc, ret, opt) => {
+        delete ret['password']
+        return ret
     }
 }
-
 
 userSchema.set('toJSON', toJSONConfig);
 
