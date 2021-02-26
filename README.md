@@ -15,39 +15,6 @@ Mi primer proyecto creando mi propia API de peliculas siguiendo los pasos **CRUD
 ## <a name="item2"></a>Herramientas 🚀
 <img src="img/js.png" width="40"><img src="img/postman.png" width="42"><img src="img/mongodb.png" width="40"><img src="img/docker.png" width="40"><img src="img/nodejs.png" width="50">
 
-## <a name="item3"></a>Funcionalidades
-
-Para poder probarlo, necesitas usar postman.
-
-- Si la creación (**POST**) es exitosa, devueve un status 200 y en el body el ID. 
-- Si da error, devulve un status 500 y en el body:
-```js
-    message: 'Server Error: ' + error 
-```
-<img src="img/Post-Film.png" width="60%">
-
-- Si la modificación (**PUT**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto actualizado. 
-- Si da error, devulve un status 500 y en el body:
-```js
-    message: 'Server Error: ' + error 
-```
-<img src="img/Put-Film.png" width="60%">
-
-- Si la lectura (**GET**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto.
-- Si no existe un objeto con el **ID** especificado, devolvera un status 404 (Not found).
-- Si da error, devulve un status 500 y en el body:
-```js
-    message: 'Server Error: ' + error 
-```
-<img src="img/Get-Film.png" width="60%">
-
-- Si la eliminación (**DELETE**) es exitosa, devueve un status 200. 
-- Si da error, devulve un status 500 y en el body:
-```js
-    message: 'Server Error: ' + error 
-```
-<img src="img/Delete-Film.png" width="60%">
-
 ## <a name="item4"></a>Ejecución 🛠️
 
 Para istalar las librerias que utilizo en el proyecto, solo tiene que lanzar:
@@ -83,5 +50,40 @@ Luego lanzar app.js
 ```bash
     npm start
 ```
+
+
+## <a name="item3"></a>Funcionalidades
+
+Para poder probarlo, necesitas usar postman.
+
+- Si la creación (**POST**) es exitosa, devueve un status 200 y en el body el ID. 
+- Si da error, devulve un status 500 y en el body:
+```js
+    message: 'Server Error: ' + error 
+```
+<img src="img/Post-Film.png" width="60%">
+
+- Si la modificación (**PUT**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto actualizado. 
+- Si da error, devulve un status 500 y en el body:
+```js
+    message: 'Server Error: ' + error 
+```
+<img src="img/Put-Film.png" width="60%">
+
+- Si la lectura (**GET**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto.
+- Si no existe un objeto con el **ID** especificado, devolvera un status 404 (Not found).
+- Si da error, devulve un status 500 y en el body:
+```js
+    message: 'Server Error: ' + error 
+```
+<img src="img/Get-Film.png" width="60%">
+
+- Si la eliminación (**DELETE**) es exitosa, devueve un status 200. 
+- Si da error, devulve un status 500 y en el body:
+```js
+    message: 'Server Error: ' + error 
+```
+<img src="img/Delete-Film.png" width="60%">
+
 
 ###### tags: `Templates` `Documentation`
