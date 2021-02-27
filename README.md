@@ -13,7 +13,7 @@ The Film Project
 Mi primer proyecto creando mi propia API de peliculas siguiendo los pasos **CRUD**, en el cual cuento con los datos de mis peliculas cargadas, usuarios y pedidos que realizo el usuario.
 
 ## <a name="item2"></a>Herramientas 🚀
-<img src="img/js.png" width="40"><img src="img/postman.png" width="42"><img src="img/mongodb.png" width="40"><img src="img/docker.png" width="40"><img src="img/nodejs.png" width="50">
+<img src="https://user-images.githubusercontent.com/56218293/109397367-7bf85800-7936-11eb-88a8-7a384392b1fc.png" width="40"><img src="https://user-images.githubusercontent.com/56218293/109397410-b4983180-7936-11eb-8c5a-6ff5908a13bb.png" width="42"><img src="https://user-images.githubusercontent.com/56218293/109397386-9b8f8080-7936-11eb-8123-391fb81a87c1.png" width="40"><img src="https://user-images.githubusercontent.com/56218293/109397340-684cf180-7936-11eb-9a52-03eef880dfba.png" width="40"><img src="https://user-images.githubusercontent.com/56218293/109397397-a5b17f00-7936-11eb-9322-d4b2adb0c202.png" width="50">
 
 ## <a name="item4"></a>Ejecución 🛠️
 
@@ -61,14 +61,14 @@ Para poder probarlo, necesitas usar postman.
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="img/Post-Film.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397426-c679d480-7936-11eb-89bb-11720cb54772.png" width="60%">
 
 - Si la modificación (**PUT**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto actualizado. 
 - Si da error, devulve un status 500 y en el body:
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="img/Put-Film.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397432-cda0e280-7936-11eb-8fa7-9b2bfee9d19b.png" width="60%">
 
 - Si la lectura (**GET**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto.
 - Si no existe un objeto con el **ID** especificado, devolvera un status 404 (Not found).
@@ -76,14 +76,14 @@ Para poder probarlo, necesitas usar postman.
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="img/Get-Film.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397418-bd890300-7936-11eb-89b1-93c744ce35f8.png" width="60%">
 
 - Si la eliminación (**DELETE**) es exitosa, devueve un status 200. 
 - Si da error, devulve un status 500 y en el body:
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="img/Delete-Film.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397435-d4c7f080-7936-11eb-957b-fcdeacf949d5.png" width="60%">
 
 
 ###### tags: `Templates` `Documentation`
