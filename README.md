@@ -61,14 +61,14 @@ Para poder probarlo, necesitas usar postman.
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="https://user-images.githubusercontent.com/56218293/109397426-c679d480-7936-11eb-89bb-11720cb54772.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397426-c679d480-7936-11eb-89bb-11720cb54772.png">
 
 - Si la modificación (**PUT**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto actualizado. 
 - Si da error, devulve un status 500 y en el body:
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="https://user-images.githubusercontent.com/56218293/109397432-cda0e280-7936-11eb-8fa7-9b2bfee9d19b.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397432-cda0e280-7936-11eb-8fa7-9b2bfee9d19b.png">
 
 - Si la lectura (**GET**) es exitosa, devueve un status 200 y en el body me devuelve el json del objeto.
 - Si no existe un objeto con el **ID** especificado, devolvera un status 404 (Not found).
@@ -76,14 +76,14 @@ Para poder probarlo, necesitas usar postman.
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="https://user-images.githubusercontent.com/56218293/109397418-bd890300-7936-11eb-89b1-93c744ce35f8.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397418-bd890300-7936-11eb-89b1-93c744ce35f8.png">
 
 - Si la eliminación (**DELETE**) es exitosa, devueve un status 200. 
 - Si da error, devulve un status 500 y en el body:
 ```js
     message: 'Server Error: ' + error 
 ```
-<img src="https://user-images.githubusercontent.com/56218293/109397435-d4c7f080-7936-11eb-957b-fcdeacf949d5.png" width="60%">
+<img src="https://user-images.githubusercontent.com/56218293/109397435-d4c7f080-7936-11eb-957b-fcdeacf949d5.png">
 
 
 ###### tags: `Templates` `Documentation`
